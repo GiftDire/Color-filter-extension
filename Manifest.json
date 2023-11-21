@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Color Filter Extension",
+  "version": "1.0.0",
+  "description": "Improve web accessibility by applying color filters to adjust the contrast for users with color blindness.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icons8-tools-16.png",
+      "48": "icons/icons8-tools-48.png"
+    },
+    "default_title": "Color Filter Extension"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Filter Extension</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Color Filter Extension</h1>
+    <div class="filters">
+      <label class="filter-option">
+        <input type="radio" name="colorFilter" value="grayscale"> Grayscale
+      </label>
+      <label class="filter-option">
+        <input type="radio" name="colorFilter" value="invert"> Invert Colors
+      </label>
+      <label class="filter-option">
+        <input type="radio" name="colorFilter" value="high-contrast"> High Contrast
+      </label>
+     
+    </div>
+    <div class="filter-settings">
+      <label for="filterStrength">Filter Strength:</label>
+      <input type="range" id="filterStrength" name="filterStrength" min="0" max="200" value="100">
+    </div>
+    <div class="buttons">
+      <button id="applyFilterButton">Apply Filter</button>
+      <button id="resetFilterButton">Reset</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
